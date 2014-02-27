@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<title>Call of Duty 4</title>  
+<link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body>
+<form name="redirect" id="redirect">
+<center>
+<font face="Arial">Espera</font>
+<form>
+<font face="Arial"><input type="text" size="3" name="redirect2" /></font>
+</form>
+<font face="Arial">segundos</font>
+</center>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+
+var targetURL="http://tny.cz/b30fd452"
+var countdownfrom=5
+
+
+var currentsecond=document.redirect.redirect2.value=countdownfrom+1
+function countredirect(){
+if (currentsecond!=1){
+currentsecond-=1
+document.redirect.redirect2.value=currentsecond
+}
+else{
+window.location=targetURL
+return
+}
+setTimeout("countredirect()",1000)
+}
+
+countredirect()
+//-->
+//]]>
+</script> <!--webbot bot="HTMLMarkup" endspan -->
+</form>
+ </body>
+</html>
